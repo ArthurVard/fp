@@ -38,6 +38,7 @@ distr = undefined
 
 length :: FunValue
 length (SequenceObject os) = makeNumber $ fromIntegral $ Prelude.length os
+length _ = Bottom
 
 trans :: FunValue
 trans = undefined
@@ -110,3 +111,4 @@ divide (SequenceObject [AtomObject (NumberAtom x), AtomObject (NumberAtom y)]) =
         Bottom
     else
         makeNumber $ x `div` y
+divide _ = Bottom
