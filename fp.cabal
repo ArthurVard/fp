@@ -34,6 +34,7 @@ executable fp
   build-depends:     base
                    , fp
                    , mtl >= 2.1.2
+                   , optparse-applicative >= 0.7.0.2
 
 source-repository head
   type: git
