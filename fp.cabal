@@ -20,7 +20,7 @@ library
                      FP.Interpreter
                      FP.Parser
                      FP.Value
-  ghc-options:       -O2 -Wall
+  ghc-options:       -O2 -Wall -fno-warn-missing-signatures
   build-depends:     base
                    , containers >= 0.5.0.0
                    , mtl >= 2.1.2
