@@ -6,10 +6,10 @@ import           FP.Value
 import           FP.Env                 (Interp(..), FunDef(..))
 import qualified FP.Env                 as Env
 
-import           Control.Applicative
-import           Control.Monad
-import           Control.Monad.Identity
-import           Control.Monad.State
+import           Control.Applicative    ((<$>), pure)
+import           Control.Monad          (forM, forM_, foldM)
+import           Control.Monad.Identity (runIdentity)
+import           Control.Monad.State    (evalStateT)
 import           Prelude hiding(exp)
 
 interpFunApp :: Function -> Object -> Interp Object

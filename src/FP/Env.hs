@@ -13,9 +13,9 @@ import           FP.AST
 import           FP.Value
 import           FP.Function as Function
 
-import           Control.Applicative
-import           Control.Monad.Identity
-import           Control.Monad.State
+import           Control.Applicative        (Applicative)
+import           Control.Monad.Identity     (Identity)
+import           Control.Monad.State        (StateT, MonadState, get, put)
 import           Data.Map    (Map)
 import qualified Data.Map    as Map
 import           Prelude     hiding (lookup)

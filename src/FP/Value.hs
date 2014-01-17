@@ -10,7 +10,7 @@ module FP.Value
     , FunValue
     ) where
 
-import Data.List
+import Data.List (intercalate)
 
 type Symbol = String
 

@@ -5,7 +5,8 @@ import           FP.Value
 
 import           Control.Applicative  hiding (many, (<|>)) -- conflicts with Parsec
 import           Text.Parsec
-import           Text.Parsec.Expr
+    (letter, (<|>), char, many1, upper, try, many, ParseError, parse)
+import           Text.Parsec.Expr     (Assoc(..), Operator(..), buildExpressionParser)
 import           Text.Parsec.Language (haskellStyle)
 import           Text.Parsec.String   (Parser)
 import qualified Text.Parsec.Token    as P
